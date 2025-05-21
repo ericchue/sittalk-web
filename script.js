@@ -8,7 +8,6 @@ function saveStory() {
   }
 
   localStorage.setItem('sitalk_latest', content);
-  alert("이야기가 저장되었습니다!");
-
-  location.reload();
+  alert("이야기가 저장되었습니다! 🎉");
+  location.reload(); // 새로고침
 }
