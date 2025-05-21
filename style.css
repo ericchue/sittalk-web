@@ -5,12 +5,23 @@ body {
   color: #333;
 }
 
+h1 {
+  text-align: center;
+  color: #4F46E5;
+  margin-bottom: 5px;
+}
+
+h2, h3 {
+  color: #444;
+}
+
 textarea {
   width: 100%;
   padding: 10px;
-  margin: 10px 0;
-  border-radius: 5px;
+  margin-top: 10px;
   border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 15px;
 }
 
 button {
@@ -18,10 +29,19 @@ button {
   background-color: #4F46E5;
   color: white;
   border: none;
+  font-weight: bold;
   border-radius: 5px;
+  margin-top: 10px;
   cursor: pointer;
 }
 
 button:hover {
   background-color: #4338CA;
+}
+
+#previous-story {
+  background: #eee;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
 }
