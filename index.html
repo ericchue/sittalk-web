@@ -3,9 +3,23 @@
 <head>
   <meta charset="UTF-8">
   <title>SitTalk</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
 </head>
 <body>
   <h1>앉는 순간, 이야기가 시작됩니다</h1>
   <p>이건 QR로 이어쓰는 SitTalk 체험용 웹페이지입니다.</p>
+
+  <h2>오늘의 주제</h2>
+  <p>“버스에서 과거의 나를 만난다면?”</p>
+
+  <h3>이전 이야기</h3>
+  <div id="previous-story">
+    "그날도 버스는 평소처럼 흔들리고 있었다..."
+  </div>
+
+  <h3>나의 이어쓰기</h3>
+  <textarea id="userLine" rows="5" placeholder="이야기를 이어서 적어주세요..."></textarea><br>
+  <button onclick="saveStory()">제출하기</button>
 </body>
 </html>
