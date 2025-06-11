@@ -2,28 +2,110 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SitTalk</title>
   <link rel="stylesheet" href="style.css">
   <script defer src="script.js"></script>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to bottom, #6366F1, #8B5CF6);
+      margin: 0;
+      padding: 0;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    header {
+      background-color: rgba(255, 255, 255, 0.05);
+      text-align: center;
+      padding: 30px 10px 20px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 2em;
+    }
+
+    main {
+      background-color: #fff;
+      color: #333;
+      border-radius: 20px 20px 0 0;
+      padding: 20px;
+      flex-grow: 1;
+    }
+
+    h2, h3 {
+      color: #4F46E5;
+      margin-bottom: 10px;
+    }
+
+    textarea {
+      width: 100%;
+      padding: 12px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      margin-bottom: 20px;
+      resize: none;
+    }
+
+    button {
+      width: 100%;
+      padding: 14px;
+      background-color: #4F46E5;
+      border: none;
+      color: white;
+      font-size: 16px;
+      font-weight: bold;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #4338CA;
+    }
+
+    #previous-story {
+      background-color: #F3F4F6;
+      padding: 12px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      font-size: 14px;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 12px;
+      color: #D1D5DB;
+      padding: 10px;
+    }
+  </style>
 </head>
 <body>
-  <h1>앉는 순간, 이야기가 시작됩니다</h1>
-  <p>QR코드를 찍고 시작되는 SitTalk 이야기 좌석</p>
+  <header>
+    <h1>SitTalk</h1>
+    <p>앉는 순간, 이야기가 시작됩니다</p>
+  </header>
 
-  <h2>오늘의 주제</h2>
-  <p>“버스에서 과거의 나를 만난다면?”</p>
+  <main>
+    <h2>오늘의 주제</h2>
+    <p>“버스에서 과거의 나를 만난다면?”</p>
 
-  <h3>이전 이야기</h3>
-  <div id="previous-story">
-    "그날도 버스는 평소처럼 흔들리고 있었다..."
-  </div>
+    <h3>이전 이야기</h3>
+    <div id="previous-story">
+      "그날도 버스는 평소처럼 흔들리고 있었다. 창밖을 바라보면서 오늘 먹은 음식을 생각했다. "
+    </div>
 
-  <h3>나의 이어쓰기</h3>
-  <textarea id="userLine" rows="5" placeholder="이야기를 이어서 적어주세요..."></textarea><br>
-  <button onclick="saveStory()">제출하기</button>
+    <h3>나의 이어쓰기</h3>
+    <textarea id="userLine" rows="5" placeholder="이야기를 이어서 적어주세요..."></textarea>
+    <button onclick="saveStory()">제출하기</button>
+  </main>
 
-  <p style="margin-top: 20px; color: gray; font-size: 12px;">
-    이야기는 기기에 임시 저장되며 새로 고침 시 초기화됩니다.
-  </p>
+  <footer>
+    © 2025 SitTalk 체험용 버전
+  </footer>
 </body>
 </html>
